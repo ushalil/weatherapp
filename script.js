@@ -20,7 +20,8 @@ const apiKey = "d05340b3398da9653f71311800997359";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + "mp/h";
             
-            weatherIcon.src = `images/${icon.toLowerCase()}.png`;
+            weatherIcon.src = `/weatherapp/images/${icon.toLowerCase()}.png`;
+
     
             document.querySelector(".weather").style.display = "block";
             document.querySelector(".error").style.display = "none";
