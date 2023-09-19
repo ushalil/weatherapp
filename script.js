@@ -13,7 +13,7 @@ const apiKey = "d05340b3398da9653f71311800997359";
             document.querySelector(".weather").style.display = "none";
         } else {
             var data = await response.json();
-            let icon = data.weather[0].main.toLowerCase();
+            let icon = data.weather[0].main;
     
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
